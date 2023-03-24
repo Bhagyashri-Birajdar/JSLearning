@@ -6,7 +6,7 @@ console.log(`Addition is ${result}`);
 
 
 var result2 = num1- num2;
-console.log(`suntraction is ${result2}`);
+console.log(`subtraction is ${result2}`);
 
 result2 = num1 * num2;
 console.log(`Multiplication is ${result2}`);

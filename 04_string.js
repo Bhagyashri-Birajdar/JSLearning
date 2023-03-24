@@ -59,3 +59,9 @@ var myFriendList = "Billgates, Stew Job, Elon Musk, Ratan Tata, Sundar Pichai, S
 var frndList=myFriendList.split(" ");
 console.log(myFriendList);
 console.log("Total words:",frndList.length);
+
+
+var num1=10;
+var num2="10";
+console.log(num1==num2);
+console.log(num1===num2);
