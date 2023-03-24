@@ -42,6 +42,7 @@ swapValuesDude(num1,num2);
 
 
 console.log("**********step 4**********");
+//function with arguments and return value
 function addThreeValues(para1,para2,para3)
 {
     var sum = para1 + para2 + para3;
