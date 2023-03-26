@@ -4,6 +4,8 @@ function gradeSystem(score)
     {
         console.log(`Score is ${score},Invalid Input`);
     }
+    else
+    {
     if(score<35){
 console.log(`Score is ${score},You are failed`);
     }
@@ -22,6 +24,7 @@ console.log(`Score is ${score},You are failed`);
     if(score>90 && score<=100){
         console.log(`Score is ${score},passed and grade is A+`);
     }
+}
 }
 gradeSystem(66);
 gradeSystem(13);

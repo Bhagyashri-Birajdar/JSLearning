@@ -3,11 +3,12 @@ function voteEligibility(age)
 {
 if(age<=0 && age==undefined && age==null && age>=120){
     console.log(`Given invalid data`);
-}
+} else{
     if(age>=18){
     console.log(`As age is ${age},he or she is eligible for voting`);
 } else{
     console.log(`As age is ${age},he or she is not eligible for voting`);
+}
 }
 }
 voteEligibility(45);
@@ -25,7 +26,8 @@ function gradeCalculation(marks)
 { // if marks is 0 or less than 0 or greater than 100 or not in valid number format // ex. “56” or “Seventy” then log the msg→ Please provide the valid marks 
     if( marks > 100 || marks<=0 || (typeof marks!= "number"))
     { console.log(`Please provide the valid marks - ${marks}`);
-} 
+    } 
+else{
    if(marks>=90 && marks<100){
 console.log(`Fantastic marks: ${marks},your grade is A+.`);
    }
@@ -39,7 +41,7 @@ console.log(`Fantastic marks: ${marks},your grade is A+.`);
             console.log(`Marks: ${marks},your grade is C.Need improvement.`);
                }
    }
- 
+}
  gradeCalculation(98);
  gradeCalculation(80);
  gradeCalculation(90);
