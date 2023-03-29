@@ -56,3 +56,21 @@ var reverseStr= function(str){ //str = do it anyhow
         //console.log(s);
     }
     console.log("Total number of vowels is:",count)
+
+
+    console.log("=====Count total characters in first word of given string=====");
+var firstWordLength= function (strGiven)
+{
+    var firstWord="";
+    for (let index =0; index>=strGiven.length-1; index++) {
+        var char=strGiven.charAt(index);
+        firstWord=firstWord+char;
+        if(char == " ")
+        break;
+        var lengthOfWord=firstWord.length;
+    }
+    return lengthOfWord;
+   }
+   var result=firstWordLength("focus is key of success");
+   console.log(result);
+   
