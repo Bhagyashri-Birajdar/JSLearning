@@ -20,6 +20,8 @@ console.log("=====Third last element using length property=====");
 var thirdLastElement =  arrayNumbers[arrayNumbers.length-3];
 console.log(`Last element in array : ${thirdLastElement}`);
 
+
+
 console.log("==========step 4==========");
 console.log("=====All even numbers=====");
  for(let index=0 ;index<=arrayNumbers.length;index++)
@@ -27,6 +29,8 @@ console.log("=====All even numbers=====");
 if(arrayNumbers[index] % 2==0)
 console.log(arrayNumbers[index]);
     }
+
+
     console.log("==========step 5==========");
     console.log("=====All Odd numbers=====");
  for(let index=0 ;index<=arrayNumbers.length-1;index++)
@@ -52,7 +56,9 @@ sumEven();
     
 console.log("==========step 7==========");
 console.log("=====Sum of all odd positioned elements from array numbers=====");
-    function sumOdd()
+// var sum =  sumEven()+ sumOdd(); 
+//console.log(sum);
+function sumOdd()
     {var sum=0;
         for(let index=0; index <(arrayNumbers.length) ; index++)
         if(index %2 !=0)
@@ -103,7 +109,7 @@ console.log(`Is 23 available in arrayNumbers: ${is23available}`);
 
 //const arrayNumbers = [20,31, 40, 25, 23, 11, 29, 9, 60, 2, 11 ];
 console.log("==========step 12==========");
-arrayNumbers[3] = 55, 66;
+var addNumbers = arrayNumbers.splice(3,0, 55, 66);
 console.log(arrayNumbers);
 
 console.log("==========step 13==========");

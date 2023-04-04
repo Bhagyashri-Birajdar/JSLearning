@@ -14,7 +14,7 @@ console.log(`Array after removing mango:${arraySeasonalFruits}`);
 arraySeasonalFruits.push("Pineapple");
 console.log(`Array after inserting Pineapple at last position: ${arraySeasonalFruits}`);
 
-arraySeasonalFruits[3]="dragon fruit";
+var addDragonfruit= arraySeasonalFruits.splice(3,0,"dragon fruit");
 console.log(`Array after inserting dragon fruit before watermelon : ${arraySeasonalFruits}`);
 
 arraySeasonalFruits[2]="Kiwi";
@@ -28,7 +28,7 @@ console.log(a);
 var b = arraySeasonalFruits.length;
 console.log(b);
 const lastThreeFruits=arraySeasonalFruits.slice(arraySeasonalFruits.length-3);
-console.log(c);
+console.log(lastThreeFruits);
 // //const slicedArray = arraySeasonalFruits.slice(1, 4);
 console.log(`Array from last 3 elements:${lastThreeFruits}`);
 
