@@ -16,17 +16,17 @@ let cloned_object = Object.assign({},bank_sbi , bank_location)
 console.log(cloned_object);
 
 console.log("=====clone object using spread operator=====");
-const clonedObject = {...bank_sbi , bank_location};
+const clonedObject = {...bank_sbi , ...bank_location};
 //console.log(`cloned object using spread operator: ${clonedObject}`);
 console.log(clonedObject);
 
-let rate_of_interest_with_properties = {
+let rate_of_interest = {
 home_loan_interest :5.6 ,
 personale_loan_interest : 7.2 , 
 due_interest :8.9 ,
 }
 console.log("=====Merging all SBI details=====");
-const sbi_details = Object.assign(bank_sbi, bank_location, rate_of_interest_with_properties ); 
+const sbi_details = Object.assign(bank_sbi, bank_location, rate_of_interest ); 
    // console.table(`Merging all SBI details:${sbi_details}`);
    console.log(sbi_details);
 
@@ -35,6 +35,6 @@ const sbi_details = Object.assign(bank_sbi, bank_location, rate_of_interest_with
     for (const key in sbi_details) {
         if (Object.hasOwnProperty.call(sbi_details, key)) {
             const element = sbi_details[key];
-            console.log(key,element);
+            console.log(`${key} : ${element}`);
              }
     }
