@@ -11,4 +11,15 @@ console.log(arrayOfNames.length);
 console.log(arrayOfNames); 
 
 arrayOfNames.length = 7; 
-console.table(arrayOfNames);
+//console.table(arrayOfNames);
+
+const array = [3, 4, 5, 6, 7, 2, 4, 5];
+const setOfElements = new Set();
+for (const element of array) {
+    setOfElements.add(element);
+
+}
+//console.table(setOfElements);
+
+const mySet = [...new Set(array)];
+console.table(mySet);
