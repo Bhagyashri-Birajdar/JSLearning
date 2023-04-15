@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> Web Local Storage</title>
+</head>
+<body>
+<h2> Web Local Storage</h2>
+<script>
+    var aaa= "Global variable";
+    window.localStorage.setItem("fullName","Virat Kohli");
+    window.localStorage.setItem("city","North Solapur");
+    window.localStorage.setItem("district","Solapur");
+    window.localStorage.setItem("pincode","412324");
+    const city = window.localStorage.removeItem("city");
+    console.log(city);
+    console.log("Local Storage");
+</script>
+</body>
+</html>
