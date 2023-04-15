@@ -75,6 +75,7 @@ let sum = 0;
 arrayEmployee.forEach( (employee) => sum = sum + employee.empSalary ); 
 console.log(sum);
 
+
 console.log("Average of the salary of all employees"); 
 arrayEmployee.forEach( (employee) => {let average = sum/ lengthOfarrayEmployee;
 console.log(average);} ); 

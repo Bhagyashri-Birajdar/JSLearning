@@ -18,7 +18,7 @@ setOfBanks.add(axisBank);
 setOfBanks.add(yesBank); 
 setOfBanks.add(hdfcBank); 
 for (const bank of setOfBanks) {
-     console.log(bank.bankName); 
+     console.log(bank.bankName,bank.location); 
     }
 
    
